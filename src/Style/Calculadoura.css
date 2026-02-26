@@ -1,51 +1,42 @@
-/* Centraliza a calculadora na tela */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #1e1e1e;
-  font-family: Arial, Helvetica, sans-serif;
+.calculatorContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #1e1e1e;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Caixa principal da calculadora */
 .Box {
   background-color: #2b2b2b;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
   width: 260px;
 }
 
-/* Tela de resultado */
 .Result {
-  background-color: #000;
+  background-color: black;
   color: #00ff88;
   height: 60px;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 10px;
   font-size: 28px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
-  overflow: hidden;
 }
 
-/* Grid dos botões */
 .digitsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-/* Estilo base dos botões */
 .box {
   background-color: #3a3a3a;
-  color: #ffffff;
+  color: white;
   height: 50px;
   border-radius: 8px;
   display: flex;
@@ -53,54 +44,38 @@ body {
   align-items: center;
   font-size: 20px;
   cursor: pointer;
-  user-select: none;
-  transition: all 0.15s ease;
+  transition: 0.15s;
 }
 
-/* Hover */
 .box:hover {
   background-color: #505050;
 }
 
-/* Clique */
 .box:active {
-  background-color: #00ff88;
-  color: #000;
   transform: scale(0.95);
 }
 
-/* Botões de operação */
-.box:nth-child(4),
-.box:nth-child(8),
-.box:nth-child(12),
-.box:nth-child(15),
-.box:nth-child(16) {
+.operator {
   background-color: #ff9500;
-  color: white;
 }
 
-.box:nth-child(4):hover,
-.box:nth-child(8):hover,
-.box:nth-child(12):hover,
-.box:nth-child(15):hover,
-.box:nth-child(16):hover {
+.operator:hover {
   background-color: #ffaa33;
 }
 
-/* Botão igual */
-.box:nth-child(13) {
-  background-color: #00c853;
-}
-
-.box:nth-child(13):hover {
-  background-color: #00e676;
-}
-
-/* Botão limpar */
-.box:nth-child(4) {
+.clear {
   background-color: #d50000;
 }
 
-.box:nth-child(4):hover {
+.clear:hover {
   background-color: #ff1744;
+}
+
+.equal {
+  grid-column: span 4;
+  background-color: #00c853;
+}
+
+.equal:hover {
+  background-color: #00e676;
 }
