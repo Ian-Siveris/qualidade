@@ -39,36 +39,6 @@ Siga os passos abaixo para executar o projeto corretamente:
 
 5. O projeto será aberto automaticamente no navegador padrão.
 
-## Pré-requisitos
-
-Antes de executar o projeto, certifique-se de que possui instalado:
-
-- Node.js
-- NPM (Node Package Manager)
-- Um navegador web moderno (Google Chrome, Edge, Firefox, etc.)
-
-Para verificar se o Node.js está instalado, execute:
-
-```bash
-node -v
-```
-
-Para verificar o NPM:
-
-```bash
-npm -v
-```
-
-## Estrutura básica do projeto
-
-```
-calculadora/
-│
-├── src/            # Arquivos fonte do projeto
-├── public/         # Arquivos públicos
-├── package.json    # Configurações e dependências
-└── README.md       # Documentação do projeto
-```
 
 ## Integrantes do projeto
 
@@ -77,8 +47,3 @@ calculadora/
 - João Vitor Montipó Becker  
 - Matheus Simmonetto  
 
-## Observações
-
-Este projeto foi desenvolvido com fins educacionais, com o objetivo de praticar conceitos de desenvolvimento, execução de projetos com Node.js e organização de aplicações.
-
----
